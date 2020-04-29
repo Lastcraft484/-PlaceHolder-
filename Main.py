@@ -4,11 +4,16 @@ import json
 import aiohttp
 import random
 import urllib.parse, urllib.request, re
-from mcstatus import MinecraftServer
 import config
 
 bot = commands.Bot(command_prefix='!')
 
+@bot.event
+async def on_ready():
+    print('Logged in as')
+    print(bot.user.name)
+    print(bot.user.id)
+    print('------')
 
 @bot.command(pass_context=True)
 async def youtube(ctx, *search):
@@ -19,6 +24,5 @@ async def youtube(ctx, *search):
     await ctx.send('http://www.youtube.com/watch?v=' + search_results[0])
 
 
-if __name__ == '__main__':
     import config
     bot.run(config.token)
