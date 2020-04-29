@@ -10,10 +10,12 @@ bot = commands.Bot(command_prefix='!')
 
 @bot.event
 async def on_ready():
+    import config
     print('Logged in as')
     print(bot.user.name)
     print(bot.user.id)
     print('------')
+    print(config.token)
 
 @bot.command(pass_context=True)
 async def youtube(ctx, *search):
