@@ -23,4 +23,4 @@ async def youtube(ctx, *search):
     await ctx.send('http://www.youtube.com/watch?v=' + search_results[0])
 
 
-    bot.run("NTk0NjYxOTI3ODQyNzQyMzA0.XqnhcA.xLts59BNMoDZrw5frkNBbbyzaCs")
+    bot.run("NTk0NjYxOTI3ODQyNzQyMzA0.XqrBUw.fW54QhWrbEPv--8FAGWJEJRVPbg")
